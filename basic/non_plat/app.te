@@ -44,11 +44,11 @@ allowxperm appdomain appdomain:fifo_file ioctl SNDCTL_TMR_START;
 # Date : W20.26
 # Operation : Migration
 # Purpose : For apps other than isolated_app_all call hidl
-hwbinder_use({ appdomain -isolated_app_all })
-get_prop({ appdomain -isolated_app_all }, hwservicemanager_prop)
-allow { appdomain -isolated_app_all } hidl_manager_hwservice:hwservice_manager find;
-binder_call({ appdomain -isolated_app_all }, mtk_safe_halserverdomain_type)
-allow { appdomain -isolated_app_all } mtk_safe_hwservice_manager_type:hwservice_manager find;
+# hwbinder_use({ appdomain -isolated_app_all })
+# get_prop({ appdomain -isolated_app_all }, hwservicemanager_prop)
+# allow { appdomain -isolated_app_all } hidl_manager_hwservice:hwservice_manager find;
+# binder_call({ appdomain -isolated_app_all }, mtk_safe_halserverdomain_type)
+# allow { appdomain -isolated_app_all } mtk_safe_hwservice_manager_type:hwservice_manager find;
 
 # Date : 2021/04/24
 # Operation: addwindow
