@@ -32,7 +32,7 @@ allow crash_dump data_tmpfs_log_file:file create_file_perms;
 allow crash_dump proc_lk_env:file rw_file_perms;
 
 # Purpose: Allow crash_dump to read /proc/cpu/alignment
-allow crash_dump proc_cpu_alignment:file w_file_perms;
+# disable: allow crash_dump proc_cpu_alignment:file w_file_perms;
 
 # Purpose: Allow crash_dump to access /sys/devices/virtual/timed_output/vibrator/enable
 allow crash_dump sysfs_vibrator_setting:dir search;
