@@ -12,7 +12,7 @@ init_daemon_domain(mobile_log_d)
 allow mobile_log_d kernel:system syslog_mod;
 
 #GMO project
-dontaudit mobile_log_d untrusted_app:fd use;
+# dontaudit mobile_log_d untrusted_app:fd use;
 # dontaudit mobile_log_d isolated_app_all:fd use;
 
 #debug property set
