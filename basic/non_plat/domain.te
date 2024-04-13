@@ -12,7 +12,7 @@ get_prop(domain, mtk_core_property_type)
 allow {
 #  domain
  # -isolated_app_all
-} sysfs_devinfo:file r_file_perms;
+} # sysfs_devinfo:file r_file_perms;
 
 # Date : W18.45
 # Operation : MTK gpu enable drvb
